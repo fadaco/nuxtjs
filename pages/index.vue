@@ -9,7 +9,7 @@
         My astonishing Nuxt.js project
       </h2>
       <div class="links">
-       <h3>hello</h3>
+       <h3>hello!!!!</h3>
       </div>
     </div>
   </div>
