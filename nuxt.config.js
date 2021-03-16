@@ -1,3 +1,5 @@
+import colors from 'vuetify/es5/util/colors'
+
 export default {
   mode: 'spa',
   /*
@@ -23,6 +25,11 @@ export default {
   /*
    ** Global CSS
    */
+   buildModules: [
+    // https://go.nuxtjs.dev/vuetify
+    '@nuxtjs/vuetify',
+    '@nuxtjs/moment',
+  ],
   css: [],
   /*
    ** Plugins to load before mounting the App
@@ -31,7 +38,30 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+      '@nuxtjs/axios',
+    'cookie-universal-nuxt'
+  ],
+   axios: {
+    baseURL: 'http://127.0.0.1:3037/api/', // Used as fallback if no runtime config is provided
+  },
+  vuetify: {
+    customVariables: ['~/assets/variables.scss'],
+    theme: {
+      dark: false,
+      themes: {
+        dark: {
+          primary: colors.blue.darken2,
+          accent: colors.grey.darken3,
+          secondary: colors.amber.darken3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3
+        }
+      }
+    }
+  },
   /*
    ** Build configuration
    */
