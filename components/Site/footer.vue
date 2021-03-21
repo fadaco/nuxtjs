@@ -10,6 +10,7 @@
         >+234 8186990513</span
       >
     </div>
+    
     <div class="footer">
       <div class="contain">
         <div class="col">

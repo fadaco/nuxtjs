@@ -49,7 +49,8 @@
         <v-col class="section-3-col" cols="12" sm="12" md="6">
           <h1 class="section-3-header">Powerful Minimalistic Dashboard</h1>
           <p class="section-3-sub">
-            Track all your businesses and communication channels at a glance with our intuitive dashboard.
+            Track all your businesses and communication channels at a glance
+            with our intuitive dashboard.
           </p>
           <br />
           <v-btn
@@ -65,40 +66,6 @@
       </v-row>
     </div>
 
-    <div class="section-4">
-      <div class="section-4-heading">
-        <h2 class="section-4-header">What people think about us</h2>
-        <v-row>
-          <v-col
-            v-for="(message, index) in whatPeopleThink"
-            :key="index"
-            cols="12"
-            sm="12"
-            md="4"
-          >
-            <v-card color="transparent" class="section-2-card text-center" flat>
-              <v-icon
-                class="text-center"
-                style="font-size: 30px; margin: 20px auto"
-                >mdi-account-circle</v-icon
-              >
-              <h4 style="margin-bottom: 10px">{{ message.title }}</h4>
-              <p style="font-size: 13px">{{ message.message }}</p>
-              <v-btn
-                small
-                text
-                :href="message.actionLink"
-                class="text-capitalize"
-                color="#6d0c17"
-              >
-                {{ message.actionWord }}
-              </v-btn>
-            </v-card>
-          </v-col>
-        </v-row>
-      </div>
-
-    </div>
     <app-footer></app-footer>
   </div>
 </template>
@@ -165,7 +132,6 @@ export default {
             "Get instant acess to our range of service in with our single sign up process.It only take a second",
           title: "Oke Theo",
         },
-
       ],
     };
   },
